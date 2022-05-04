@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Watch</title>
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--header-->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p id="">12 Avenue Taieb Mhiri Ariana 22-392-405</p>
+            <div>
+                <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+                <a href="#" class="px-3 border-right text-dark">Whishlist(0)</a>
+            </div>
+        </div>
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">I Watch</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto font-rubik">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="#">On Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Watchs <i class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Category <i class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comming soon</a>
+                        </li>
+                    </ul>
+                    <form action="#" class="font-size-14 font-rale">
+                        <a href="#" class="py-2 rounded-pill color-primary-bg">
+                            <span class="font-size-16 px-2 text-white">
+                                <i class="fas fa-shopping-cart">
+
+                                </i>
+                            </span>
+                            <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- start #main-site -->
+    <main id="main-site">
+<!-- Shopping cart section  -->
+<section id="cart" class="py-3">
+    <div class="container-fluid w-75">
+        <h5 class="font-baloo font-size-20">Shopping Cart</h5>
+
+        <!--  shopping cart items   -->
+        <div class="row">
+            <div class="col-sm-9">
+                <!-- cart item -->
+                <div class="row border-top py-3 mt-3">
+                    <div class="col-sm-2">
+                        <img src="../assets/image/festina_bleu_bracelet_d'acier.png" style="height: 120px;" alt="cart1" class="img-fluid">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5 class="font-baloo font-size-20">Festina bleu bracelet</h5>
+                        <small>by Festina</small>
+                        
+
+                        <!-- product qty -->
+                        <div class="qty d-flex pt-2">
+                            <div class="d-flex font-rale w-25">
+                                <button class="qty-up border bg-light" data-id="pro1"><i
+                                        class="fas fa-angle-up"></i></button>
+                                <input type="text" data-id="pro1" class="qty_input border px-2 w-100 bg-light" disabled
+                                    value="1" placeholder="1">
+                                <button data-id="pro1" class="qty-down border bg-light"><i
+                                        class="fas fa-angle-down"></i></button>
+                            </div>
+                            <button type="submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
+                        </div>
+                        <!-- !product qty -->
+
+                    </div>
+
+                    <div class="col-sm-2 text-right">
+                        <div class="font-size-20 text-danger font-baloo">
+                            <span class="product_price">350TND</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- !cart item -->
+                <!-- cart item -->
+                <div class="row border-top py-3 mt-3">
+                    <div class="col-sm-2">
+                        <img src="../assets/image/festina_bleu_bracelet_d'acier.png" style="height: 120px;" alt="cart1"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5 class="font-baloo font-size-20">Festina bleu bracelet</h5>
+                        <small>by Festina</small>
+                
+                
+                        <!-- product qty -->
+                        <div class="qty d-flex pt-2">
+                            <div class="d-flex font-rale w-25">
+                                <button class="qty-up border bg-light" data-id="pro2"><i class="fas fa-angle-up"></i></button>
+                                <input type="text" data-id="pro2" class="qty_input border px-2 w-100 bg-light" disabled value="1"
+                                    placeholder="1">
+                                <button data-id="pro2" class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                            </div>
+                            <button type="submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
+                        </div>
+                        <!-- !product qty -->
+                
+                    </div>
+                
+                    <div class="col-sm-2 text-right">
+                        <div class="font-size-20 text-danger font-baloo">
+                            <span class="product_price">350TND</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- !cart item -->
+            </div>
+            <!-- subtotal section-->
+            <div class="col-sm-3">
+                <div class="sub-total border text-center mt-2">
+                    <h6 class="font-size-12 font-rale text-success py-3"><i class="fas fa-check"></i> Your order is
+                        eligible for FREE Delivery.</h6>
+                    <div class="border-top py-4">
+                        <h5 class="font-baloo font-size-20">Subtotal (2 item):&nbsp; <span class="text-danger">TND<span
+                                    class="text-danger" id="deal-price">700.00</span> </span> </h5>
+                        <button type="submit" class="btn btn-warning mt-3">Proceed to Buy</button>
+                    </div>
+                </div>
+            </div>
+            <!-- !subtotal section-->
+        </div>
+        <!--  !shopping cart items   -->
+    </div>
+</section>
+<!-- !Shopping cart section  -->
+
+        <!--top sale-->
+<section id="top-sale">
+    <div class="container py-5">
+        <h4 class="font-rubik font-size-20">Top Sale</h4>
+        <hr>
+        <div class="owl-carousel owl-theme">
+            <div class="item py-2">
+                <div class="product font-rale">
+                    <a href="#"><img src="../assets/image/festina_4.png" alt="festina chrono"></a>
+                    <div class="text-center">
+                        <h6>Festina chrono</h6>
+                        <div class="price py-2">
+                            <span>152TND</span>
+                        </div>
+                        <button type="submit" class="btn btn-warning font-size-12">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="product font-rale">
+                    <a href="#"><img src="../assets/image/festina_bleu_bracelet_d'acier.png"
+                            alt="festina festina_bleu_bracelet_d'acier"></a>
+                    <div class="text-center">
+                        <h6>Festina bleu bracelet d'acier</h6>
+                        <div class="price py-2">
+                            <span>350TND</span>
+                        </div>
+                        <button type="submit" class="btn btn-warning font-size-12">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="product font-rale">
+                    <a href="#"><img src="../assets/image/tag_heuer_formula1.jpg" alt="tag_heurer_formula1"></a>
+                    <div class="text-center">
+                        <h6>Tag Heuer formula1</h6>
+                        <div class="price py-2">
+                            <span>3350TND</span>
+                        </div>
+                        <button type="submit" class="btn btn-warning font-size-12">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="product font-rale">
+                    <a href="#"><img src="../assets/image/tissot gentleman.webp" alt="tissot gentleman"></a>
+                    <div class="text-center">
+                        <h6>Tissot Gentleman</h6>
+                        <div class="price py-2">
+                            <span>650TND</span>
+                        </div>
+                        <button type="submit" class="btn btn-warning font-size-12">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="product font-rale">
+                    <a href="#"><img src="../assets/image/tissot_couturier chronograph.webp"
+                            alt="tissot_couturier chronograph"></a>
+                    <div class="text-center">
+                        <h6>Tissot Couturier Chronograph</h6>
+                        <div class="price py-2">
+                            <span>720TND</span>
+                        </div>
+                        <button type="submit" class="btn btn-warning font-size-12">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="product font-rale">
+                    <a href="#"><img src="../assets/image/swatch_black_rebel.png" alt="swatch_black_rebel"></a>
+                    <div class="text-center">
+                        <h6>Swatch Black Rebel</h6>
+                        <div class="price py-2">
+                            <span>220TND</span>
+                        </div>
+                        <button type="submit" class="btn btn-warning font-size-12">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item py-2">
+                <div class="product font-rale">
+                    <a href="#"><img src="../assets/image/tissot_everytime.webp" alt="tissot_everytime"></a>
+                    <div class="text-center">
+                        <h6>Tissot_Everytime</h6>
+                        <div class="price py-2">
+                            <span>900TND</span>
+                        </div>
+                        <button type="submit" class="btn btn-warning font-size-12">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- ! top sale-->
+    </main>
+    <footer id="footer" class="color-primary-bg text-white py-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <h4 class="font-rubik font-size-20">I watch</h4>
+                    <p class="font-size-14 font-rale text-white-50">Your best online watch store</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4 class="font-rubik font-size-20">Newslatter</h4>
+                    <form class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email *"> <br>
+                        </div>
+                        <div class="col">
+                            <br>
+                            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h4 class="font-rubik font-size-20">Information</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h4 class="font-rubik font-size-20">Account</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newslatters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright text-center bg-dark text-white py-2">
+        <p class="font-rale font-size-14">&copy; Copyrights 2022.
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel Js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <!--  isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+    <!-- Custom Javascript -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
