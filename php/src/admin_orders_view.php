@@ -6,9 +6,8 @@ $users=$conn->query("select distinct user_id from cart;");
 $users =$users->fetch_all();
 //var_dump($users);
 foreach($users as $user ){
-    $items= $conn->query("select * from cart where user_id=$user[0]");
+    $items= $conn->query("select c.user_id,c.item_id,quant,p.item_price from cart c  left join product p on c.item_id = p.item_id where c.user_id=$user[0];");
     $items=$items->fetch_all();
-//    var_dump($items);
     $orders[]= array($user[0]=>$items);
 //    var_dump($orders);
 }
@@ -66,6 +65,7 @@ if(isset($message)){
                 <th>User_id</th>
                 <th>product_id</th>
                 <th>Price</th>
+                <th>Quantity</th>
                 <th>action</th>
             </tr>
             </thead>
@@ -74,12 +74,13 @@ if(isset($message)){
                         $totalValue=0;
                         ?>
                         <?php foreach($product as $p){
-                            $totalValue+=(int)$p[0];
+                            $totalValue+=(int)$p[2]*$p[2];
                             ?>
                 <tr>
-                    <td><?= $p[1]?></td>
-                    <td><?php echo $p[2]; ?></td>
-                    <td><?= $p[0]?> TND</td>
+                    <td><?= $p[0]?></td>
+                    <td><?php echo $p[1]; ?></td>
+                    <td><?php echo $p[3]; ?>TND</td>
+                    <td><?= $p[2]?> </td>
 <!--                    <td>-->
 <!--                        <a href="admin_update.php?edit=--><?php //echo $row['item_id']; ?><!--" class="btn"> <i class="fas fa-edit"></i> edit </a>-->
 <!--                        <a href="admin_page.php?delete=--><?php //echo $row['item_id']; ?><!--" class="btn"> <i class="fas fa-trash"></i> delete </a>-->
